@@ -1,5 +1,5 @@
-document.getElementById('contact-form').addEventListener('submit', function (e) {
-  e.preventDefault();
-  document.getElementById('form-response').textContent = 'Thank you! Your message has been sent.';
-  this.reset();
-});
+const toggleButton = document.getElementById('toggleDarkMode');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggleButton.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    });

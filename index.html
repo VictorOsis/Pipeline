@@ -2,80 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Junior Azure Cloud Engineer Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Junior Cloud Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <button id="toggleDarkMode" aria-label="Toggle Dark Mode">🌙</button>
+
   <header>
     <h1>Victor Osisanya</h1>
-    <p>Junior Azure Cloud Engineer</p>
+    <p>Junior Cloud Developer | AZ-900 Certified</p>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certs">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm an aspiring junior cloud developer passionate about building scalable and secure cloud solutions. I recently attained my <strong>Microsoft Azure Fundamentals (AZ-900)</strong> certification and am excited to grow my skills in cloud computing.</p>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m a Junior Azure Cloud Engineer passionate about deploying, automating, and managing cloud resources using Microsoft Azure. I enjoy building secure, scalable, and reliable systems in the cloud.</p>
-  </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Azure Fundamentals (AZ-900)</li>
+        <li>Cloud Computing</li>
+        <li>Virtual Machines & Networking</li>
+        <li>Azure Storage</li>
+        <li>PowerShell & CLI</li>
+        <li>Git & GitHub</li>
+        <li>JavaScript & HTML/CSS</li>
+      </ul>
+    </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Azure CLI & PowerShell</li>
-      <li>Azure Virtual Machines & Networking</li>
-      <li>Azure DevOps Pipelines</li>
-      <li>Programming skills including Python, Java, C#, HTML, CSS, and JavaScript </li>
-      <li>Docker (basic)</li>
-      <li>Linux & Windows Server</li>
-      <li>Scripting and Automation</li>
-      <li>Azure Resource Manager (ARM)</li>
-      <li>Databases</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Deployed an ARM template using Azure</h3>
-      <p>Used Azure to deploy a personally created ARM template that specified , Virtual Machines(VMS), Virtual networks(VNets), Network Secuirty Groups(NSGs), avaliablity sets, a load balancer, a public IP address and Network Interfaces.</p>
-    </div>
-    <div class="project">
-      <h3>Deployed a CI/CD with a Static website on Azure</h3>
-      <p>Created a new resource group called portfolio, added a container and configured it to run a static website that I coded using HTML, CSS and Javascript. Added it to a github repository and used git actions to ...</p>
-    </div>
-  </section>
-
-  <section id="certs">
+    <section id="cert">
     <h2>Certifications</h2>
-    <ul>
+    <ul class="skills-list">
       <li>Microsoft Certified: Azure Fundamentals (AZ-900)</li>
       <li>Microsoft Certified: Azure Administrator Associate (AZ-104) <i>Pending</i></li>
     </ul>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form id="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <p id="form-response"></p>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <div class="project-title">Azure Blob Storage Demo</div>
+        <div class="project-description">A simple web app demonstrating file upload and retrieval using Azure Blob Storage and JavaScript SDK. You are looking at it now! </div>
+      </div>
+      <div class="project-card">
+        <div class="project-title">Virtual Network Setup</div>
+        <div class="project-description">Configured a secure virtual network with subnets and NSGs using Azure Portal</div>
+      </div>
+      <div class="project-card">
+        <div class="project-title">Deployed an ARM template using Azure</div>
+        <div class="project-description">Used Azure to deploy an ARM template that specified , Virtual Machines(VMS), Virtual networks(VNets), Network Secuirty Groups(NSGs), avaliablity sets, a load balancer, a public IP address and Network Interfaces.</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>If you'd like to connect or collaborate, here is my <a href="https://docs.google.com/document/d/1ryVvTZSzVhtr5T8fIJSXiVClfZRBuPcHf-Gx-VLVqPM/edit?tab=t.0">CV</a> and feel free to reach out via <a href="mailto:victor.osisanya@outlook.com">email</a> or check out my <a href="https://github.com/VictorOsis" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Victor Osisanya</p>
+    &copy; 2025 John Doe. All rights reserved.
   </footer>
 
-  <script src="script.js"></script>
+ <script src="script.js"></script>
 </body>
 </html>
